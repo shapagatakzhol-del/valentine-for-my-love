@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Приглашение на 14 февраля 💖</title>
+<!-- WhatsApp Preview -->
+<meta property="og:title" content="Особенное приглашение 💖">
+<meta property="og:description" content="14 февраля в 17:00 у Астана Опера 🎭">
+<meta property="og:type" content="website">
+<style>
+body{
+    margin:0;
+    padding:0;
+    font-family:'Georgia',serif;
+    background:linear-gradient(135deg,#141e30,#243b55);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    color:white;
+}
+/* Частицы */
+.particle{
+    position:absolute;
+    width:6px;
+    height:6px;
+    background:#ff4d6d;
+    border-radius:50%;
+    opacity:0.6;
+    animation:float 8s linear infinite;
+}
+@keyframes float{
+    from{transform:translateY(100vh);}
+    to{transform:translateY(-10vh);}
+}
+.card{
+    width:90%;
+    max-width:420px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(20px);
+    border-radius:25px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 0 50px rgba(255,77,109,0.4);
+    animation:fadeIn 1.8s ease;
+}
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(30px);}
+    to{opacity:1; transform:translateY(0);}
+}
+h1{
+    color:#ff758f;
+    margin-bottom:5px;
+    font-size:26px;
+}
+h2{
+    margin-top:0;
+    font-size:16px;
+    font-weight:normal;
+    opacity:0.9;
+}
+.highlight{
+    color:#ffb3c6;
+    font-weight:bold;
+}
+.dress{
+    margin-top:15px;
+    padding:10px;
+    background:rgba(255,182,193,0.2);
+    border-radius:15px;
+    font-style:italic;
+    font-size:13px;
+}
+.poem{
+    margin-top:18px;
+    font-style:italic;
+    font-size:14px;
+    line-height:1.6;
+}
+button{
+    margin-top:22px;
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:#ff4d6d;
+    color:white;
+    font-size:15px;
+    cursor:pointer;
+    transition:0.3s;
+}
+button:hover{
+    transform:scale(1.08);
+    background:#ff758f;
+    box-shadow:0 0 20px #ff4d6d;
+}
+.footer{
+    margin-top:20px;
+    font-size:13px;
+    opacity:0.7;
+}
+</style>
+</head>
+<body>
+<script>
+for(let i=0;i<40;i++){
+    let p=document.createElement("div");
+    p.className="particle";
+    p.style.left=Math.random()*100+"vw";
+    p.style.animationDuration=(6+Math.random()*6)+"s";
+    document.body.appendChild(p);
+}
+</script>
+<div class="card">
+<h1>14 февраля 💖</h1>
+<h2>Для Аяулым и Жанэль</h2>
+<p>
+Приглашаем вас на вечер,
+где чувства звучат тише слов,
+но говорят гораздо больше.
+</p>
+<p>
+Встречаемся у театра  
+<span class="highlight">«Астана Опера»</span><br>
+🕔 <span class="highlight">17:00</span>
+</p>
+<div class="dress">
+✨ Dress code: не важен —  
+вы прекрасны в любом образе.  
+Главное — ваши улыбки.
+</div>
+<div class="poem">
+Пусть этот вечер будет лёгким,<br>
+как первый аккорд в большом зале,<br>
+где взгляды встречаются тихо,<br>
+и мир замирает на мгновение.<br><br>
+Пусть станет он началом истории,<br>
+которую захочется помнить.
+</div>
+<button onclick="confirmInvite()">Подтвердить 💌</button>
+<div class="footer">
+С любовью,<br>
+Акжол и Бижан ❤️
+</div>
+</div>
+<script>
+function confirmInvite(){
+    alert("Ждём вас ❤️ 17:00 у Астана Опера");
+}
+</script>
+</body>
+</html>
